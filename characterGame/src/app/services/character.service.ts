@@ -23,7 +23,7 @@ export class CharacterService {
   }
 //resetting the character after win
   resetCharacterStats(character: Character) {
-    character.health = character.originalHealth * 1.1;
+    character.health = Math.round(character.originalHealth * 1.1);
     character.strength += 30;
     character.dexterity += 30;
     character.magic += 30;

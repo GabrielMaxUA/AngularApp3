@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CharacterService } from '../services/character.service';
 import { Character } from '../models/character.model';
 import { HttpClient } from '@angular/common/http';
+import { isEmpty } from 'rxjs';
 
 @Component({
   selector: 'app-character-list',
@@ -60,8 +61,13 @@ export class CharacterListComponent implements OnInit {
   setCharacterName(): void {
     // Set name entered by the user for the selected character
     if (this.userCharacter) {
-      this.userCharacter.name = this.userCharacterName;
-      this.fightReady = true; // Mark fight as ready
+      if (this.userCharacterName.trim().length > 0) { // Check if userCharacterName is not empty
+        this.userCharacter.name = this.userCharacterName;
+        this.fightReady = true; // Mark fight as ready
+      } else {
+        
+        this.fightReady = false; // Disable fight readiness if name is empty
+      }
     }
   }
 
@@ -133,8 +139,8 @@ export class CharacterListComponent implements OnInit {
       round: this.round,
       userDamage: userAttack,
       enemyDamage: enemyAttack,
-      userHealth: this.userCharacter.health,
-      enemyHealth: this.enemyCharacter.health,
+      userHealth: Math.round(this.userCharacter.health),
+      enemyHealth: Math.round(this.enemyCharacter.health),
       result: roundResult
     });
 
