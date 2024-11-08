@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url("/back.webp");
+  background-size: cover; /* Optional: to cover the entire background */
+  background-repeat: no-repeat; /* Optional: to avoid repeating */
+  background-attachment: fixed; /* Optional: to keep the background fixed during scrolling */
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

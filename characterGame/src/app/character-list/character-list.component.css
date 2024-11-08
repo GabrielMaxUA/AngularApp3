@@ -1,0 +1,206 @@
+.character-card {
+  transition: 0.3s;
+  cursor: pointer;
+  width: 17vw;
+  text-align: center;
+  color: aliceblue;
+  border-radius: 12px;
+  box-shadow: 5px 10px 12px rgba(231, 220, 6, 0.9),  -5px -10px 12px rgba(231, 220, 6, 0.9);
+  background: #33333381;
+}
+
+.character-card img{
+  border-radius: 8px;
+  padding-bottom: 20px;
+}
+
+h2{
+  color: rgb(233, 137, 12);
+}
+.character-card:hover {
+  background: #333333c8;
+  color: rgb(233, 137, 12);
+  box-shadow: 5px 10px 12px rgba(233, 137, 12, 0.9),  -5px -10px 12px rgba(233, 137, 12, 0.9);
+}
+
+.character-display img{
+  border-radius: 12px;
+  padding-bottom: 20px;
+}
+
+.chose {
+  color: #f0f0f0;
+}
+
+.fight-arena {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.midsection {
+  background: rgba(240, 240, 240, 0.7);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+  width: 15vw;
+  margin: 60px auto;
+}
+
+.fight-messages {
+  margin: 20px;
+}
+
+.default-message {
+  color: #ff0000;
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.user-message {
+  color: #2222ec;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.enemy-message {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.log-book {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+  color: #333;
+}
+
+.log-entry {
+  margin-bottom: 10px;
+}
+
+.float-end {
+  float: right;
+}
+
+
+
+/* 
+.character-card {
+  border: 1px solid #e2e997;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  color:aliceblue;
+  display: flex;
+  flex-flow: column nowrap;
+  
+  width: 300px;
+  border-radius: 12px;
+} 
+
+.preview h2,h2{
+  color:#f0f0f0;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.character-card img {
+  border-radius: 12px;
+  box-shadow: 10px 10px 15px #f0f0f061, -10px -10px 15px#f0f0f061;
+  
+}
+
+.chose{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: start;
+  color: #f0f0f0;
+}
+
+.chose img{
+  width: 300px;
+  border-radius: 12px;
+}
+
+.character-card:hover {
+  background-color: #20779a;
+  color: rgb(233, 137, 12);
+}
+
+.selected-character {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #333;
+}
+
+.fight-arena{
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+.fight-arena button{
+  border-radius: 4px;
+  height: auto;
+  width: 170px;
+  background: #ed6d0b;
+}
+
+.preview{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.midsection{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background: #f0f0f061;
+  margin: auto 40px;
+  padding: 10px;
+  height: 300px;
+  margin: 40px;
+}
+
+.fight-message{
+  color: rgb(255, 255, 255);
+  border: 2px solid #f0f0f0;
+  background: #03b5f0;
+  padding: 5px;
+  margin: 20px;
+  width:300px;
+  height: auto;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
+.default-message{
+  color: rgb(255, 0, 0);
+  margin-bottom: 30px;
+  font-size: large;
+  font-weight: 500;
+}
+
+.user-message {
+  color: rgb(34, 34, 236);
+  margin-bottom: 10px;
+  font-size: medium;
+}
+
+.enemy-message {
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  font-size: medium;
+} */
