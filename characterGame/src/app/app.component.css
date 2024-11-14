@@ -1,6 +1,4 @@
-h1{
-  text-align: center;
-  color: rgb(233, 137, 12);
-  margin-bottom: 50px;
+.center{
+display: flex;
+justify-content: center;
 }
-

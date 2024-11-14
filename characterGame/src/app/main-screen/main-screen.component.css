@@ -1,4 +1,13 @@
+.character-selection{
+  margin: 50px;
+  text-align: center;
+}
+
 .character-card {
+  float: left;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
   transition: 0.3s;
   cursor: pointer;
   width: 17vw;
@@ -7,26 +16,42 @@
   border-radius: 12px;
   box-shadow: 5px 10px 12px rgba(231, 220, 6, 0.9),  -5px -10px 12px rgba(231, 220, 6, 0.9);
   background: #33333381;
+  margin: 30px;
 }
 
 .character-card img{
+  width: 17vw;
   border-radius: 8px;
   padding-bottom: 20px;
 }
+/* .character-card p{
+  color: rgb(233, 137, 12);
+} */
 
 h2{
   color: rgb(233, 137, 12);
 }
+
 .character-card:hover {
   background: #333333c8;
   color: rgb(233, 137, 12);
   box-shadow: 5px 10px 12px rgba(233, 137, 12, 0.9),  -5px -10px 12px rgba(233, 137, 12, 0.9);
 }
 
-.character-display img{
+mat-card-title {
+  color: rgb(233, 137, 12);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+mat-card-content p {
+  color: aliceblue;
+  margin: 5px 0;
+}
+/* .character-display img{
   border-radius: 12px;
   padding-bottom: 20px;
-}
+} */
 
 .chose {
   color: #f0f0f0;

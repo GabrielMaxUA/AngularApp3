@@ -1,0 +1,14 @@
+
+.messages {
+  margin-top: 20px;
+}
+
+.user {
+  color: blue;
+  font-weight: bold;
+}
+
+.enemy {
+  color: red;
+  font-weight: bold;
+}

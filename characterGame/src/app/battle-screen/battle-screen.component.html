@@ -1,0 +1,43 @@
+<div class="arena-container m-3 text-center">
+  <div class="battle-arena d-flex justify-content-between">
+    <div class="user text-white text-center m-4">
+      <h2>{{ userCharacter.name }}</h2>
+
+      <img [src]="userCharacter.image" />
+      <p>Health: {{userCharacter.health}}</p>
+      <p>Strength: {{userCharacter.strength}}</p>
+      <p>Dexterity: {{userCharacter.dexterity}}</p>
+      <p>Magic: {{userCharacter.magic}}</p>
+    </div>
+    <div class="mid-section text-center">
+      <messages [messages]="fightMessages"></messages>
+      <button (click)="fightStatus === 'lose' ? restartGame() : startFight()"
+      [ngClass]="fightStatus === 'lose' ? 'btn btn-danger' : 'btn btn-primary'">
+      {{fightStatus === 'lose' ? 'Try Again' : 'Atack!'}}
+    </button>
+    </div>
+    <div class="enemy text-white text-center m-4">
+      <h2>{{ enemyCharacter?.type }}</h2>
+      <img [src]="enemyCharacter?.image" />
+      <p>Health: {{enemyCharacter?.health}}</p>
+      <p>Strength: {{enemyCharacter?.strength}}</p>
+      <p>Dexterity: {{enemyCharacter?.dexterity}}</p>
+      <p>Magic: {{enemyCharacter?.magic}}</p>
+    </div>
+  </div>
+  <button class="show-log btn btn-primary" (click)="getLog()">
+    {{ showLog ? 'Hide Log' : 'Show Log' }}
+  </button>
+
+  <!-- Conditionally display log content -->
+  <div *ngIf="showLog" class="log-content mt-3 p-2 border border-primary">
+    <h3>Battle Log</h3>
+    <div *ngFor="let logEntry of logBook">
+      <p>Round {{ logEntry.round }}:</p>
+      <p>{{ logEntry.userName }} dealt {{ logEntry.userDamage }} damage to {{ logEntry.enemyCharacter }}.</p>
+      <p>{{ logEntry.enemyCharacter }} dealt {{ logEntry.enemyDamage }} damage to {{ logEntry.userCharacter }}.</p>
+      <p>Result: {{ logEntry.result }}</p>
+      <hr>
+    </div>
+  </div>
+</div>

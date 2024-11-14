@@ -1,7 +1,7 @@
 
 export class Character {
   originalHealth: number;
-//model of a character
+  
   constructor(
     public type: string,
     public health: number,

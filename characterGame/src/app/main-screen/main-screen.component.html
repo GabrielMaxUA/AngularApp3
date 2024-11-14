@@ -1,0 +1,31 @@
+<!-- src/app/main-screen/main-screen.component.html -->
+<div *ngIf="currentView === 'characterSelection'">
+
+<div class="character-selection">
+    <h2>Select Your Character</h2>
+    <div
+      *ngFor="let character of characters"
+      class="character-card"
+      [appCharacterSelection]="character"
+      (characterSelected)="onCharacterSelected($event)"
+      >
+      <img [src]="character.image" alt="{{ character.name }}" />
+      <p>{{ character.type }}</p>
+      <p>Health: {{ character.health }}</p>
+      <p>Strength: {{ character.strength }}</p>
+      <p>Dexterity: {{ character.dexterity }}</p>
+      <p>magic: {{ character.magic }}</p>
+    </div>
+    </div>
+  
+
+
+<!-- Display CharacterFormComponent if a character is selected -->
+  <app-character-form class="text-center " *ngIf="userCharacter" [character]="userCharacter" (nameSubmitted)="onNameSubmitted($event)">
+  </app-character-form>
+</div>
+
+<div *ngIf="currentView === 'battleScreen'">
+  <app-battle-screen [userCharacter]="userCharacter!" (restart)="goToCharacterSelection()"></app-battle-screen>
+</div>
+

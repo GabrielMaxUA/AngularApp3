@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "characterGame": {
+    "BattleField": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -41,7 +41,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/character-game",
+            "outputPath": "dist/battle-field",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -55,8 +55,8 @@
               }
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "@angular/material/prebuilt-themes/azure-blue.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -89,10 +89,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "characterGame:build:production"
+              "buildTarget": "BattleField:build:production"
             },
             "development": {
-              "buildTarget": "characterGame:build:development"
+              "buildTarget": "BattleField:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -1,0 +1,5 @@
+<div class="messages ">
+  <div *ngFor="let message of messages" [ngClass]="message.type" class="mb-3">
+    {{ message.text }}
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.input{
+  width: 400px;
+  border-radius: 4px;
+  height: 40px;
+}
+
+button{
+  border-radius: 4px;
+  width: 80px;
+  padding: 2px;
+  height: 38px;
+  border: 1px solid white;
+}

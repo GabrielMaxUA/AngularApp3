@@ -1,0 +1,58 @@
+.user img, .enemy img, .midsection{
+  width: 17vw;
+}
+
+.battle-arena{
+  float: left;
+}
+
+.battle-arena {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Make the container full-width */
+  gap: 20px;
+}
+
+.user, .mid-section, .enemy {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: rgba(221, 218, 218, 0.241);
+  min-height: 300px;
+  min-width: 250px;
+}
+.mid-section{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.mid-section > button{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100px;
+}
+
+.user img, .enemy img {
+  max-width: 100%; /* Make images responsive */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.show-log{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.log-content{
+  margin:0 auto;
+  background: #0649796f;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  width: 70vw;
+  color: #ccc;
+}
